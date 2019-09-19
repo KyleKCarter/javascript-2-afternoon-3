@@ -123,8 +123,8 @@ contains(names, 'Colt', function(result){
 
 //Code Here
 function uniq(arr, cb){
-  var duplicated = arr.filter(function(num, str, arr){
-    return arr.indexOf(num) == str});
+  var duplicated = arr.filter(function(cur, ind, arr){
+    return arr.indexOf(cur) == ind});
   cb(duplicated)
 }
 
